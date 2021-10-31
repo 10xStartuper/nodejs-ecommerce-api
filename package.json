@@ -14,7 +14,7 @@
     "JavaScript"
   ],
   "author": "Mukhammadyusuf Abdurakhimov",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
