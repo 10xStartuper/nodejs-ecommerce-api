@@ -26,6 +26,8 @@ npm install
 You need to edit the `.env` configurations, for that you should just create `.env` file and edit the following keys: 
 - `PORT` - the application port. if you do not spesify this the application port will automatically be 4000;
 - `DB_URL` - this helps the application to connect your mongo db cluster. for that go to cloud.mongodb.com.
+- `SECRET_PHRASE` - for Encrypting/Decrypting the password when you save to the database
+- `JWT_SECRET` - JSON WEB TOKEN'S Secret key
 
 ### Step 4
 
