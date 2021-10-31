@@ -4,10 +4,15 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 mongoose
   .connect(process.env.DB_URL)
   .then(() => console.log("Successful DB Connection"))
   .catch((err) => console.log(err));
+
+app.use("/api/users", require("./routes/user"));
 
 app.listen(process.env.PORT || 4000, () =>
   console.log(
