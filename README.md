@@ -1,5 +1,5 @@
 # nodejs-ecommerce-api
-Nodejs eCommerce API is the way to go out of wordpress woocommerce world and to start actual backend based apps, this was inspired by lamadevs videos on YpuTube. Feel free to use my codebase as your next ecommerce backend, or you can use the frontend that I have made using the lamadev videos...
+Nodejs eCommerce API is the way to go out of the WordPress woo commerce world and to start actual backend-based apps, this was inspired by lamadev's videos on youtube. Feel free to use my codebase as your next ecommerce backend, or you can use the frontend that I have made using the lamadev videos...
 
 ## Installation
 
