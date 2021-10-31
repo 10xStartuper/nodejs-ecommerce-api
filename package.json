@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-ecommerce-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "Ecommerce",
+    "API",
+    "JavaScript"
+  ],
+  "author": "Mukhammadyusuf Abdurakhimov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.14"
+  }
+}
