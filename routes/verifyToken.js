@@ -9,7 +9,6 @@ const verifyToken = (req, res, next) => {
         res.status(403).json({ message: "Token is not valid" });
       }
       req.user = user;
-      console.log(user);
       next();
     });
   } else {
@@ -29,4 +28,16 @@ const verifyTokenAndAuth = (req, res, next) => {
   });
 };
 
-module.exports = { verifyToken, verifyTokenAndAuth };
+const verifyTokenAndAdmin = (req, res, next) => {
+  verifyToken(req, res, () => {
+    if (req.user.isAdmin) {
+      next();
+    } else {
+      res
+        .status(403)
+        .json({ message: "You are not allowed to take this action" });
+    }
+  });
+};
+
+module.exports = { verifyToken, verifyTokenAndAuth, verifyTokenAndAdmin };
